@@ -107,8 +107,10 @@ pucpr_data_mining/
 ├── iris_reptree.ipynb                 # Modelo: Replica Tree
 │
 ├── uci-dataset-iris/                  # Dataset original UCI
-│   ├── Index
-│   └── iris.names
+│   ├── iris.names                     # Descrição do dataset e metadados
+│   ├── iris.data                      # Dataset original (com erros conhecidos)
+│   ├── bezdekIris.data                # Dataset corrigido por Bezdek et al.
+│   └── Index                          # Índice de arquivos
 │
 ├── docs/                              # Documentação adicional
 ├── output/                            # Gráficos e resultados gerados
@@ -175,14 +177,6 @@ model.fit(iris.data, iris.target)
 # Fazer predições
 prediction = model.predict(iris.data[:5])
 ```
-
-## 🔍 Próximos Passos
-
-- [ ] Implementar validação cruzada (Cross-Validation)
-- [ ] Adicionar tuning de hiperparâmetros
-- [ ] Comparação de performance entre modelos
-- [ ] Visualizações interativas com Plotly
-- [ ] Exportar modelos treinados
 
 ## 📄 Licença
 
